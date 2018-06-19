@@ -1,0 +1,4 @@
+## Demo App - Android
+# Non-project-specific build files:
+/proximitydemo/platforms
+/proximitydemo/node_modules
