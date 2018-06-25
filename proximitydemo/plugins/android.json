@@ -7,7 +7,7 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
+    "cordova-estimote-proximity": {
       "PACKAGE_NAME": "com.zackhable.estimote.proximitydemo"
     }
   },

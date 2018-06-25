@@ -43,6 +43,9 @@ var app = {
 		.withLowLatencyPowerMode()
 		.withOnSuccessAction(app.buildZones)
 		.withOnErrorAction(app.buildScannerFailed)
+		.withAnalyticsReportingDisabled()
+		.withTelemetryReportingDisabled()
+		.withEstimoteSecureMonitoringDisabled()
 		.build();
 	},
 	buildScannerFailed: function(info) {
@@ -53,7 +56,7 @@ var app = {
 		console.log("Proximity Scanner ID: "+resp);
 		app.pids.push([resp, 0]);
 		window.plugins.EstimoteProximity.proximityZoneBuilder()
-		.forAttachmentKeyAndValue("zone", "desk")
+		.forAttachmentKeyAndValue("area", "desk")
 		.inNearRange()
 		.withOnEnterAction(app.onEnterZone)
 		.withOnExitAction(app.onExitZone)

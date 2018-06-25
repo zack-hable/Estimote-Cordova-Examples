@@ -6,5 +6,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-estimote-proximity": {
+    "source": {
+      "type": "local",
+      "path": "C:\\Users\\zhable.CORP\\research\\Estimote-Cordova-Examples\\proximitydemo\\node_modules\\cordova-estimote-proximity"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }
