@@ -56,7 +56,7 @@ var app = {
 		console.log("Proximity Scanner ID: "+resp);
 		app.pids.push([resp, 0]);
 		window.plugins.EstimoteProximity.proximityZoneBuilder()
-		.forAttachmentKeyAndValue("area", "desk")
+		.forTag("desk")
 		.inNearRange()
 		.withOnEnterAction(app.onEnterZone)
 		.withOnExitAction(app.onExitZone)
